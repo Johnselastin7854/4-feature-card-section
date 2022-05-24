@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --font: 15px;
+  --f-family: "Poppins", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: var(--font);
+  font-family: var(--f-family);
+  background-color: var(--very-light-gray);
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+header {
+  text-align: center;
+}
+
+.heading-1 {
+  font-size: 34px;
+  font-weight: 200;
+  color: var(--very-dark-blue);
+}
+.heading-2 {
+  font-size: 34px;
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+.description {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  margin-top: 60px;
+}
+.role {
+  background-color: #fff;
+  border-radius: 7px;
+  padding: 30px;
+  text-align: right;
+  box-shadow: 2px 7px 10px var(--grayish-blue);
+}
+.text {
+  text-align: left;
+  font-size: 20px;
+  color: var(--very-dark-blue);
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+.role-1 {
+  border-top: 4px solid var(--cyan);
+}
+.role-2 {
+  border-top: 4px solid var(--red);
+}
+.role-3 {
+  border-top: 4px solid var(--orange);
+}
+.role-4 {
+  border-top: 4px solid var(--blue);
+}
+.role-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.role-1,
+.role-4 {
+  align-self: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+  .roles {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    font-size: 13px;
+  }
+  .heading-1 {
+    font-size: 20px;
+  }
+  .heading-2 {
+    font-size: 20px;
+  }
+  .role {
+    padding: 20px;
+  }
+  .text {
+    padding-bottom: 30px;
+  }
+}
